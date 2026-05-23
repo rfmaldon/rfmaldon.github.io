@@ -1,0 +1,297 @@
+/* Ruben Francisco — portfolio */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&family=Rufina:wght@400;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 10px; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #000;
+  background: #fff;
+}
+
+a { color: inherit; text-decoration: none; }
+a:hover { opacity: 0.6; transition: opacity 0.2s; }
+
+img { display: block; max-width: 100%; height: auto; }
+
+/* ---------- layout ---------- */
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.wrap-wide { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+
+/* ---------- header ---------- */
+.site-header {
+  padding: 32px 0;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 100;
+  border-bottom: 1px solid #f0f0f0;
+}
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  font-family: 'Rufina', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.nav { display: flex; gap: 36px; }
+.nav a {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 500;
+}
+.nav a.active { border-bottom: 2px solid #000; padding-bottom: 4px; }
+
+/* ---------- hero ---------- */
+.hero {
+  padding: 80px 0 60px;
+  text-align: center;
+}
+.hero-name {
+  font-family: 'Rufina', serif;
+  font-size: clamp(5rem, 10vw, 11rem);
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 16px;
+}
+.hero-title {
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 40px;
+  color: #444;
+}
+.hero-portrait {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 32px;
+}
+.hero-bio {
+  max-width: 680px;
+  margin: 0 auto;
+  font-size: 1.9rem;
+  line-height: 1.7;
+  color: #222;
+}
+.hero-bio strong { font-weight: 600; }
+.hero-contact {
+  display: block;
+  margin: 28px auto 0;
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  text-decoration: underline;
+}
+
+/* ---------- section heading ---------- */
+.section-heading {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  text-align: center;
+  margin: 100px 0 50px;
+  font-weight: 500;
+  color: #222;
+}
+
+/* ---------- work grid (home) ---------- */
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+.work-card {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 2 / 1;
+  background: #f4f4f4;
+}
+.work-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+.work-card:hover img { transform: scale(1.04); opacity: 1; }
+.work-card .label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.25);
+  color: #fff;
+  font-family: 'Rufina', serif;
+  font-size: clamp(2.4rem, 3.6vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+  transition: background 0.3s;
+}
+.work-card:hover .label { background: rgba(0,0,0,0.45); }
+
+/* ---------- category page ---------- */
+.page-title {
+  font-family: 'Rufina', serif;
+  font-size: clamp(4rem, 8vw, 8.5rem);
+  font-weight: 700;
+  text-align: center;
+  padding: 80px 0 20px;
+  letter-spacing: -0.01em;
+}
+.page-subtitle {
+  font-size: 1.6rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #666;
+  margin-bottom: 60px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 0 0 80px;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+.gallery-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+}
+.gallery-grid-2 img { width: 100%; height: auto; }
+
+/* ---------- about ---------- */
+.about-hero {
+  padding: 60px 0 40px;
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 60px;
+  align-items: center;
+}
+.about-hero img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.about-name {
+  font-family: 'Rufina', serif;
+  font-size: clamp(4rem, 6.5vw, 7rem);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+.about-role {
+  font-size: 1.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #555;
+}
+
+.about-section { padding: 60px 0; border-top: 1px solid #eee; }
+.about-section h2 {
+  font-family: 'Rufina', serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.role-block { margin-bottom: 36px; }
+.role-block .role-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.role-block .role-meta {
+  font-size: 1.4rem;
+  color: #777;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.role-block .role-desc {
+  font-size: 1.7rem;
+  color: #222;
+  max-width: 720px;
+}
+
+.client-list, .awards-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  font-size: 1.8rem;
+}
+
+.contact-block {
+  font-size: 2rem;
+  line-height: 1.8;
+}
+.contact-block a { text-decoration: underline; }
+
+/* ---------- footer ---------- */
+.site-footer {
+  margin-top: 120px;
+  padding: 60px 0 40px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+.footer-heading {
+  font-family: 'Work Sans', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 1.4rem;
+  margin-bottom: 24px;
+  color: #555;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 32px;
+  list-style: none;
+}
+.social a {
+  font-size: 1.4rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+}
+.copyright {
+  font-size: 1.3rem;
+  color: #888;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+/* ---------- responsive ---------- */
+@media (max-width: 720px) {
+  .work-grid, .gallery-grid-2 { grid-template-columns: 1fr; gap: 20px; }
+  .about-hero { grid-template-columns: 1fr; text-align: center; gap: 24px; }
+  .about-hero img { margin: 0 auto; }
+  .nav { gap: 20px; }
+  .nav a { font-size: 1.2rem; letter-spacing: 0.12em; }
+  .site-header { padding: 20px 0; }
+  .brand { font-size: 1.8rem; }
+  .hero { padding: 40px 0 30px; }
+  .section-heading { margin: 60px 0 30px; }
+  .gallery { gap: 24px; }
+}
