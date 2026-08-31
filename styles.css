@@ -177,6 +177,83 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .gallery-grid-2 img { width: 100%; height: auto; }
 
+/* ---------- project intro (package design tab) ---------- */
+.page-intro {
+  max-width: 720px;
+  margin: 0 auto 90px;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+/* ---------- project section (sub-projects within one page) ---------- */
+.project-section {
+  padding: 80px 0;
+  border-top: 1px solid #eee;
+}
+.project-section:first-of-type { border-top: none; padding-top: 0; }
+
+.project-kicker {
+  font-size: 1.4rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 12px;
+}
+.project-title {
+  font-family: 'Rufina', serif;
+  font-size: clamp(3.2rem, 5vw, 5.4rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 8px;
+}
+.project-tagline {
+  font-size: 1.6rem;
+  letter-spacing: 0.06em;
+  color: #666;
+  margin-bottom: 28px;
+}
+.project-meta {
+  font-size: 1.3rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 28px;
+}
+.project-intro {
+  max-width: 760px;
+  font-size: 1.75rem;
+  line-height: 1.8;
+  color: #222;
+  margin-bottom: 48px;
+}
+.project-gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 56px;
+}
+.project-gallery figure { margin: 0; }
+.project-gallery img { width: 100%; height: auto; }
+.project-gallery figcaption {
+  max-width: 720px;
+  margin: 18px auto 0;
+  font-size: 1.5rem;
+  line-height: 1.65;
+  color: #666;
+  text-align: center;
+}
+.project-gallery figcaption strong {
+  display: block;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 6px;
+}
+
 /* ---------- about ---------- */
 .about-hero {
   padding: 60px 0 40px;
@@ -294,4 +371,6 @@ img { display: block; max-width: 100%; height: auto; }
   .hero { padding: 40px 0 30px; }
   .section-heading { margin: 60px 0 30px; }
   .gallery { gap: 24px; }
+  .project-section { padding: 50px 0; }
+  .project-gallery { gap: 36px; }
 }
