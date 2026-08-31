@@ -9,6 +9,11 @@
   <meta name="author" content="Ruben Francisco">
   <link rel="canonical" href="https://www.rubenf.com/alyra.html">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-JJQFDHTEWV"></script>
   <script>
@@ -36,6 +41,17 @@
   <meta name="twitter:title" content="Alyra — Ruben Francisco">
   <meta name="twitter:description" content="Return to Rhythm: a circadian-wellness brand identity, packaging system, and app UI.">
   <meta name="twitter:image" content="https://www.rubenf.com/images/6beca181fcdc6afe.jpg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.rubenf.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Package Design", "item": "https://www.rubenf.com/package-design.html"},
+      {"@type": "ListItem", "position": 3, "name": "Alyra", "item": "https://www.rubenf.com/alyra.html"}
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -43,13 +59,27 @@
   <div class="wrap">
     <a href="index.html" class="brand">Ruben Francisco</a>
     <nav class="nav">
-      <a href="index.html" class="active">Work</a>
+      <details class="nav-dropdown active">
+        <summary>Work</summary>
+        <ul class="nav-dropdown-panel">
+          <li><a href="concept-art.html">Digital Sculpture</a></li>
+          <li><a href="set-design.html">Set Design</a></li>
+          <li><a href="animation.html">Animation</a></li>
+          <li><a href="advertising.html">Backgrounds</a></li>
+          <li><a href="murals.html">Murals</a></li>
+          <li><a href="illustration.html">Illustration</a></li>
+          <li><a href="rock-work.html">Rock Work</a></li>
+          <li><a href="graphic-design.html">Graphic Design</a></li>
+          <li><a href="package-design.html" class="active">Package Design</a></li>
+        </ul>
+      </details>
       <a href="about.html">About</a>
     </nav>
   </div>
 </header>
 
 <main class="wrap">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><a href="package-design.html">Package Design</a><span class="sep">/</span><span class="current">Alyra</span></nav>
   <p class="project-back"><a href="package-design.html">&larr; Back to Package Design</a></p>
 
   <section class="project-section">
@@ -92,11 +122,36 @@
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="footer-heading">Follow me around</p>
-    <ul class="social">
-      <li><a href="https://www.linkedin.com/in/rubenfranciscoart/" target="_blank" rel="noopener">LinkedIn</a></li>
-      <li><a href="https://www.instagram.com/pointsinspace/" target="_blank" rel="noopener">Instagram</a></li>
-    </ul>
+    <div class="footer-nav">
+      <div class="footer-col">
+        <p class="footer-heading">Work</p>
+        <ul class="footer-list">
+          <li><a href="concept-art.html">Digital Sculpture</a></li>
+          <li><a href="set-design.html">Set Design</a></li>
+          <li><a href="animation.html">Animation</a></li>
+          <li><a href="advertising.html">Backgrounds</a></li>
+          <li><a href="murals.html">Murals</a></li>
+          <li><a href="illustration.html">Illustration</a></li>
+          <li><a href="rock-work.html">Rock Work</a></li>
+          <li><a href="graphic-design.html">Graphic Design</a></li>
+          <li><a href="package-design.html">Package Design</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Site</p>
+        <ul class="footer-list">
+          <li><a href="index.html">Work</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <p class="footer-heading">Follow me around</p>
+        <ul class="social">
+          <li><a href="https://www.linkedin.com/in/rubenfranciscoart/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://www.instagram.com/pointsinspace/" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
     <p class="copyright">&copy; Ruben Francisco</p>
   </div>
 </footer>
