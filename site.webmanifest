@@ -1,0 +1,10 @@
+{
+  "name": "Ruben Francisco — Creative Director & Production Designer",
+  "short_name": "Ruben Francisco",
+  "icons": [
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#111111",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
