@@ -187,10 +187,69 @@ img { display: block; max-width: 100%; height: auto; }
   line-height: 1.8;
 }
 
-/* ---------- project section (sub-projects within one page) ---------- */
+/* ---------- project hero grid (package design index) ---------- */
+.project-hero-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 56px;
+  padding-bottom: 100px;
+}
+.project-hero-card {
+  display: block;
+  text-align: center;
+}
+.project-hero-card img {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  margin-bottom: 24px;
+  transition: opacity 0.3s;
+}
+.project-hero-card:hover img { opacity: 0.8; }
+.project-hero-kicker {
+  font-size: 1.4rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: #999;
+  margin-bottom: 10px;
+}
+.project-hero-title {
+  font-family: 'Rufina', serif;
+  font-size: clamp(2.4rem, 3vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+}
+.project-hero-tagline {
+  font-size: 1.4rem;
+  letter-spacing: 0.06em;
+  color: #666;
+  margin-bottom: 16px;
+}
+.project-hero-caption {
+  max-width: 340px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 1.65;
+  color: #555;
+}
+
+/* ---------- project section (individual sub-project pages) ---------- */
+.project-back {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.project-back a {
+  font-size: 1.3rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000;
+  padding-bottom: 2px;
+}
 .project-section {
   padding: 80px 0;
   border-top: 1px solid #eee;
+  text-align: center;
 }
 .project-section:first-of-type { border-top: none; padding-top: 0; }
 
@@ -223,10 +282,10 @@ img { display: block; max-width: 100%; height: auto; }
 }
 .project-intro {
   max-width: 760px;
+  margin: 0 auto 48px;
   font-size: 1.75rem;
   line-height: 1.8;
   color: #222;
-  margin-bottom: 48px;
 }
 .project-gallery {
   display: grid;
@@ -373,4 +432,5 @@ img { display: block; max-width: 100%; height: auto; }
   .gallery { gap: 24px; }
   .project-section { padding: 50px 0; }
   .project-gallery { gap: 36px; }
+  .project-hero-grid { grid-template-columns: 1fr; gap: 48px; padding-bottom: 60px; }
 }
